@@ -1,0 +1,9 @@
+#PBS -l nodes=1:ppn=4
+#PBS -q una
+#PBS -j oe
+#PBS -m ea
+#PBS -M kxiao@hamilton.edu
+#PBS -l walltime=03:30:30
+#PBS -N MPI_Test_4
+
+cd $PBS_O_WORKDIR

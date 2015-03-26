@@ -1,0 +1,32 @@
+ ==== MAIN ROUTINE ====
+
+getInput();
+
+forecast_rule = frule[0];
+
+Initialize some variables.
+
+write to outfile1
+write to outfile2
+
+for (int acount = 0; acount < numa[0]; acount++)
+	couts
+	
+	for (int sims = 0; sims < runs[0]; sims++) 
+		
+		srand(randSeed[0]);
+		couts
+		write to outfile
+		
+		declare lists
+
+		==== INITIALIZE AGENTS ====	
+		
+		set doubles "xstar" and "pstarvalue"
+		
+		for (i = 0; i < popsize[0]; i++) 
+			agent newAgent(...);
+			newAgent.setSpread();
+			if(i < fundTrader[0])
+				newAgent.setX (X = A, B, C, D, etc.)
+				newAgent.setFund, Shares

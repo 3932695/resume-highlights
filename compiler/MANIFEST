@@ -1,0 +1,86 @@
+Programs for semantic testing.  These are partitioned into two sets:  those that should be all right, and those for which you should generate semantic errors.
+
+semantic_ok:
+
+  test002 : local shadows global
+  test003 : int arithmetic and assignment 
+  test005 : hello world (string and Print)
+  test006 : boolean operation 
+  test008 : basic while loop 
+  test011 : integer %, ==, if statement, Print with multiple params
+  test013 : true
+  test021 : ok function call #1 
+  test022 : ok function call #2
+  test023 : ok factorial function (recursion) 
+  test026 : call function defined later
+  test028 : mutual recursion
+  test029 : mutual recursion that prints something  :-)  
+  test030 : int array declare and assign (no initialize)
+  test033 : int array array with assign
+  test035 : int array array indexed and assigned an int array
+  test036 : array passed as parameter
+  test038 : int array declare, initialize, assign, and print
+  test043 : simplest class, and a declaration
+  test044 : simplest class, a declaration, and an initialization
+  test047 : defining and calling a void method 
+  test048 : disambiguating global and class functions 
+  test049 : more disambiguation testing with side effects by 
+            evaluating parameters 
+  test052 : making the simple factorial function a method
+  test053 : calling a method on an immediately created object (**)
+  test054 : newly created, call fact method and print result
+  test055 : subclass (inherits method)
+  test056 : subclass (overrides method)
+  test061 : member data (set and get)
+  test063 : member data is distinct
+  test064 : access other's member data
+  test065 : correctly implements an interface
+  test068 : implements two interfaces
+  test069 : interfaces across class hierarchy with methods found
+            in the same classes that implement the interfaces.
+  test071 : find the interface method in the superclass
+  test072 : invoke interface method : with interface method found in the 
+            superclass.
+  test073 : compatible assignment
+  test074 : interfaces inherited
+  test075 : invoke interface method
+
+semantic_errors:
+
+  test001 : two local vars, same name
+  test004 : mixed arithmetic type
+  test007 : assignment type mismatch
+  test009 : bool in comparison operator
+  test010 : int-typed condition
+  test014 : int-typed condition
+  test015 : this outside class
+  test016 : undefined variable
+  test017 : undefined function call
+  test018 : too many arguments
+  test019 : too few arguments
+  test020 : wrong type argument
+  test023a : void used in assignment
+  test023b : void used in functioncall
+  test024 : wrong type argument inside recursion
+  test025 : wrong type for return statement
+  test027 : return type of function not compatible with arithmetic operation
+  test031 : int array declare and assign wrong type
+  test032 : int array declare and assign wrong type index
+  test034 : array assignment with array wrong type
+  test037 : wrong type array passed as parameter
+  test039 : non-integer size in NewArray
+  test040 : wrong type in NewArray
+  test041 : return with no value from value-returning function
+  test042 : return value from void function
+  test045 : undefined type, declaration
+  test046 : undefined type, initialization
+  test050 : try to Print an object
+  test051 : member data access outside class
+  test057 : incorrect method override
+  test058 : calling an object like a function
+  test059 : calling a class like a function
+  test060 : circular class hierarchy
+  test062 : access member data outside class
+  test066 : missing function from interface
+  test067 : wrong type in interface function parameter list
+  test070 : incompatible interface type

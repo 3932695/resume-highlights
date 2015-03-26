@@ -1,0 +1,29 @@
+Script started on Wed 19 Nov 2014 10:16:56 PM EST
+/home/kxiao/310/sem
+
+
+Running make
+g++ -c decafs.cc
+decafs.cc: In function 'S_variable* makeVariable(ParseTree*)':
+decafs.cc:118: warning: unused variable 'lineNo'
+decafs.cc: In function 'S_class* makeClass(ParseTree*)':
+decafs.cc:178: warning: unused variable 'implements'
+decafs.cc: In function 'void pass1(ParseTree*)':
+decafs.cc:289: warning: unused variable 'entry'
+decafs.cc:293: warning: unused variable 'entry'
+decafs.cc: In function 'void pass2(ParseTree*)':
+decafs.cc:411: warning: comparison between signed and unsigned integer expressions
+decafs.cc:435: warning: comparison between signed and unsigned integer expressions
+decafs.cc:415: warning: unused variable 'formalsCount'
+decafs.cc:380: warning: unused variable 'extends'
+decafs.cc: In function 'int checkClassFields(S_class*, std::string, std::string)':
+decafs.cc:479: warning: comparison between signed and unsigned integer expressions
+decafs.cc: In function 'void pass3(ParseTree*, Symtab*)':
+decafs.cc:675: warning: comparison between signed and unsigned integer expressions
+decafs.cc:698: warning: comparison between signed and unsigned integer expressions
+decafs.cc:745: warning: comparison between signed and unsigned integer expressions
+decafs.cc:777: warning: comparison between signed and unsigned integer expressions
+decafs.cc:824: warning: comparison between signed and unsigned integer expressions
+g++ -o decafs decafs.o lex.yy.o y.tab.o semantics.o parsetree.o
+There are no automatic tests.
+Evaluation complete.

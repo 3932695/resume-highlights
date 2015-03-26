@@ -1,0 +1,20 @@
+#!/bin/bash
+max=$1
+name=$2
+let curr=0
+
+/usr/lib64/mvapich2/bin/mpiexec -np ${max} ${name}
+
+
+while ((curr!=max)); do
+      cat ${curr}fexplosive.txt > explosive.txt
+      cat ${curr}fnumExplosions.txt > numExplosions.txt
+      cat ${curr}fvolatility.txt > volatility.txt
+      let curr++
+done
+
+rm *fexplosive.txt
+rm *fnumExplosions.txt
+rm *fvolatility.txt
+rm *fwealthDist.txt
+echo "Done!"

@@ -1,0 +1,3 @@
+./decafc sample.decaf
+jasmin _sample*.j
+java _sample

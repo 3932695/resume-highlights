@@ -1,0 +1,9 @@
+rm -f _sample*
+
+./decafc sample.decaf
+jasmin _sample*.j
+
+echo "========= OUTPUT ========="
+
+java _sample
+

@@ -1,0 +1,505 @@
+
+
+/*
+void main()
+{
+  int x;
+  x = 4 + 1;
+  Print(x);
+}
+*/
+
+/* Output: <<<<<<<<<<<<<<<<<<<<<<<
+5
+*/ 
+
+
+
+
+
+
+
+
+/*
+int x;
+
+void main()
+{
+  int x;
+  int y;
+  bool z;
+  x = 6;
+  y = 7;
+  z = x < y;
+  Print(z);
+}
+*/
+/* Output: <<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+true
+*/ 
+
+
+
+
+
+
+
+/*
+void main()
+{
+  int x;
+  int y;
+  x = 0;
+  while (x < 4) {
+    Print("Hello, world");
+    x = x + 1;
+  }
+}
+*/
+
+
+
+/* Output: <<<<<<<<<<<<<<<<<<<<<<<<
+Hello, world
+Hello, world
+Hello, world
+Hello, world
+*/
+
+
+
+
+
+/*
+int x;
+
+void main()
+{
+  int x;
+  int y;
+  x = 0;
+  while (x < 4) {
+    Print("Hello, world");
+    if (x % 2 == 0) 
+      Print("Even ", x);
+    x = x + 1;
+  }
+}
+*/
+
+/* Output: <<<<<<<<<<<<<<<<<<<<<<<<<<<
+Hello, world
+Even 0
+Hello, world
+Hello, world
+Even 2
+Hello, world
+*/
+
+
+/*
+void func(int x){
+	int z;
+	z = x + 95;
+	Print(z);
+}
+void main(){
+	int x;
+	x = 5;
+	func(x);
+}
+*/
+
+/* CUSTOM TEST: <<<<<<<<<<<<<<<<<<<<<<
+100
+*/
+
+
+
+
+/*
+void fact(int s)
+{
+  Print(s);
+}
+
+void main()
+{
+  fact(5);
+}
+*/
+/* Output: <<<<<<<<<<<<<<<<<<<<<<<<<<
+5
+*/
+
+
+
+
+
+
+
+/*
+int fact(int s)
+{
+  Print(s);
+  if (s == 0)
+    return 1;
+  return s * fact(s-1);
+}
+
+void main()
+{
+  fact(5);
+}
+*/
+
+/* Output: <<<<<<<<<<<<<<<<<<<<<
+5
+4
+3
+2
+1
+0
+*/
+
+
+
+
+
+
+/*
+
+int bar (int v) 
+{
+  return fact(v - 1);
+}	
+
+int fact(int s)
+{
+  if (s == 0)
+    return 1;
+  return s * bar(s);
+}
+
+void main()
+{
+  Print(fact(5));
+}
+*/
+/* Output: <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+120
+*/
+
+
+
+
+
+/*
+void main()
+{
+  int [] A;
+  A = NewArray(10, int);
+  A[0] = 4;
+  Print(A[0]);
+}
+*/
+
+/* Output:
+4
+*/
+
+
+
+
+
+
+
+/*
+
+class A {
+  void func() 
+  { 
+    Print("Hi mom!"); 
+  }
+}
+
+void main()
+{
+  A a;
+  a = New(A);
+  a.func();
+}
+*/
+
+/* Output: <<<<<<<<<<<<<<<<<<<<<<<<<
+Hi mom!
+*/
+
+
+
+
+
+
+/*
+class A {
+  void func() 
+  { 
+    Print("Hi mom!"); 
+  }
+}
+
+void func()
+{
+  Print("Hi Dad!");
+}
+
+void main()
+{
+  A a;
+  a = New(A);
+  a.func();
+  func();
+}
+*/
+
+/* Output: <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Hi mom!
+Hi Dad!
+*/
+
+
+
+
+
+
+
+
+
+/*
+class A {
+  int func() 
+  { 
+    Print("Hi Mom!"); 
+    return 5;
+  }
+}
+
+void func()
+{
+  Print("Hi Dad!");
+}
+
+void main()
+{
+  A a;
+  a = New(A);
+  Print(a.func());
+  func();
+}
+*/
+/* Output: <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+Hi Mom!
+5
+Hi Dad!
+*/
+
+
+
+
+
+
+
+
+
+/*
+class A {
+  int fact(int x) 
+  { 
+    if (x == 0)
+      return 1;
+    return x * fact(x-1);
+  }
+}
+
+void main()
+{
+  A a;
+  a = New(A);
+  Print(New(A).fact(6));
+}
+*/
+
+/* Output: <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+720
+*/
+
+
+
+
+
+
+
+
+/*
+
+class A {
+  int fact(int x) 
+  { 
+    if (x == 0)
+      return 1;
+    return x * fact(x-1);
+  }
+}
+
+class B extends A {}
+
+void main()
+{
+  B a;
+  a = New(B);
+  Print(a.fact(6));
+}
+*/
+/* Output: <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+720
+*/
+
+
+
+
+
+
+
+
+/*
+class A {
+  int fact(int x) 
+  { 
+    if (x == 0)
+      return 1;
+    return x * fact(x-1);
+  }
+}
+
+class B extends A {
+  int fact(int x) 
+  { 
+    if (x == 0)
+      return 0;
+    return x + fact(x-1);
+  }
+
+
+}
+
+void main()
+{
+  B a;
+  a = New(B);
+  Print(a.fact(6));
+}
+*/
+/* Output: <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+21
+*/
+
+
+
+
+
+
+/*
+
+int x;
+
+class A {
+  int x;
+  void set(int y) { x = y; }
+  int get() { return x; }
+}
+
+void main()
+{
+  A a;
+  a = New(A);
+  a.set(5);
+  x = 6;
+  Print(a.get());
+  Print(x);
+}
+*/
+/* Output:
+5
+6
+*/
+
+
+
+
+
+
+
+/*
+
+class A {
+  int x;
+  void set(int y) { x = y; }
+  int get() { return x; }
+  void add(A other) { x = x + other.x; }
+}
+
+interface Setter {
+  void set(int x);
+}
+
+void main()
+{
+  A a;
+  A b;
+  a = New(A);
+  b = New(A);
+  a.set(5);
+  b.set(6);
+  Print(a.get());
+  Print(b.get());
+}
+
+*/
+
+/* Output:
+5
+6
+*/
+
+
+
+
+
+
+/*
+int pascalc(int x, int y){
+	if((x == 0) || (x == y)){
+		return 1;
+	}
+	
+	return pascalc(x-1, y) + pascalc(x-1, y-1);
+
+}	
+
+void main()
+{
+  int x;
+  int y;
+
+  for(x = 0; x < 100; x = x + 1){
+	for(y = 0; y <= x; y = y + 1){
+		Print(pascalc(x, y));
+	}
+		
+	
+  }
+}
+*/
+
+
+

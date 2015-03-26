@@ -1,0 +1,5 @@
+cs310
+which javac
+javac _hello.java
+jasper _hello.class //disassembler
+jasmin goodbye.j //assembler

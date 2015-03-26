@@ -1,0 +1,5 @@
+frule leval pupdate a numExplosions  upExplosions  downExplosions 
+1 200 0.5 -4 981 979 2
+1 200 0.5 -3.9 973 969 4
+1 200 0.5 -3.8 963 959 4
+1 200 0.5 -3.7 957 950 7
